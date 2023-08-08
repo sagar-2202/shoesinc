@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{request.user}}'s Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <span class="fs-4">Welcome {{request.user}} </span>
+        </header>
+      
+        <main>
+          <h1 class="text-body-emphasis">Get started with ShoesInc</h1>
+          <p class="fs-5 col-md-8">Quickly and easily get started with ShoesInc, production-ready brochure with this barebones example featuring some basic touch up about the product. Download all our brochures to get started.</p>
+      
+          <hr class="col-3 col-md-2 mb-5">
+      
+          <div class="row g-5">
+            <div class="col-md-6">
+              <h2 class="text-body-emphasis">{{request.user}} Resources</h2>
+              <p>These are the resource links to github and a few more repositories.</p>
+              <ul class="list-unstyled ps-0">
+                <li>
+                  <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener" target="_blank">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                    Bootstrap npm starter
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener" target="_blank">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                    Bootstrap Parcel starter
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite" rel="noopener" target="_blank">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                    Bootstrap Vite starter
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack" rel="noopener" target="_blank">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                    Bootstrap Webpack starter
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </main>
+        <footer class="pt-5 my-5 text-body-secondary border-top">
+          Created by ShoesInc &middot; &copy; 2023
+        </footer>
+        <p><a class="btn btn-lg btn-dark" href="/login">Logout</a></p>
+      </div>
+      
+      <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
